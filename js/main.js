@@ -61,7 +61,7 @@ function languageEN() {
     aboutTitle.innerHTML = "About Me";
     whoAm.innerHTML = 'Who am I?';
     description.innerHTML = 'I am Yael Ruiz Pucheta a Web Developer and a passionate for technology.';
-    history.innerHTML = 'i Work as a freelance in Xalapa Veracruz,Mexico. I began programming in <strong>2015.</strong>';
+    history.innerHTML = 'I Work as a freelance in Xalapa Veracruz,Mexico. I began programming in <strong>2015.</strong>';
     activities.innerHTML = 'I create customised solutions for small business and entrepreneurs that whant to join to digital world, to bring their products and services to innovation era.';
     skillTitle.innerHTML = 'Skills';
     moreSkillsbtn.innerHTML = 'Show more';
