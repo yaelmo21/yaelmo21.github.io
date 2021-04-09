@@ -67,9 +67,10 @@ body {
     text-align: center;
 }
 
-.text-img a {
+.show-img {
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .container-icon {
@@ -119,4 +120,10 @@ body {
 
 .active-icon {
     color: #1345b3
+}
+
+.button-icon {
+    border: none;
+    background: none;
+    cursor: pointer;
 }

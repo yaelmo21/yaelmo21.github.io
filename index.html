@@ -36,11 +36,18 @@
                 <div class="navbar-nav">
                     <a class="nav-link" id="nav_home" href="#home" onclick="closeNav()"><i class="fas fa-home m-1"></i>Inicio</a>
                     <a class="nav-link" id="nav_about" href="#about" onclick="closeNav()"><i class="fas fa-user m-1"></i>Sobre Mi</a>
-                    <a class="nav-link" id="nav_lasts_proyects" href="#lasts_proyects" onclick="closeNav()"><i class="fas fa-box-open m-1"></i>Últimos Proyectos</a>
+                    <a class="nav-link" id="nav_latest_proyects" href="#latest_proyects" onclick="closeNav()"><i class="fas fa-box-open m-1"></i>Últimos Proyectos</a>
                     <a class="nav-link" id="nav_contact" href="#contact" onclick="closeNav()"><i class="fas fa-id-card m-1"></i>Contactame</a>
                 </div>
                 <div style="flex: 1 1 auto;"></div>
                 <div class="d-flex justify-content-end ">
+                    <div class="dropstart pr-3">
+                        <button class="button-icon text-white dropdown-toggle" type="button" id="language" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-globe"></i></button>
+                        <ul class="dropdown-menu" aria-labelledby="language">
+                            <li><button class="dropdown-item" type="button" id="es" onclick="languageES()">Español</button></li>
+                            <li><button class="dropdown-item" type="button" id="en" onclick="languageEN()">English</button></li>
+                        </ul>
+                    </div>
                     <div class="form-check form-switch ">
                         <input class="form-check-input" type="checkbox" id="dark_mode" onclick="darkMode(this.checked)">
                         <label class="form-check-label text-white" for="dark_mode"><i id="iconDark"; class="fas fa-moon"></i></label>
@@ -56,34 +63,34 @@
                     <img src="img/yael.webp" class="img-fluid rounded-circle" style="max-width: 200px; " alt="yael ruiz">
                 </div>
                 <div class="d-flex flex-column text-center text-white ">
-                    <h4>Hola !</h4>
-                    <h1>Soy Yael Ruiz Pucheta</h1>
+                    <h4 id="greetings">Hola !</h4>
+                    <h1 id="name">Soy Yael Ruiz Pucheta</h1>
 
-                    <h3><i class="fas fa-terminal m-1 text-danger"></i>Desarrollador Web</h3>
+                    <h3><i class="fas fa-terminal m-1 text-danger"></i><span id="specialty">Desarrollador Web</span></h3>
                 </div>
             </div>
         </section>
         <section id="about" class="container pt-1">
             <div data-aos="fade-up" class="row">
                 <div class="col-sm-12 bg-blue-y p-2 text-white text-center ">
-                    <h2>Sobre mi</h2>
+                    <h2 id="about-title">Sobre mi</h2>
                 </div>
             </div>
             <div class="row mt-3 ">
                 <div data-aos="fade-right" class="col-sm-4 ">
-                    <h3>¿Quien soy?</h3>
-                    <p class="lead">
+                    <h3 id="who-am">¿Quien soy?</h3>
+                    <p id="description" class="lead">
                         Soy Yael Ruiz Pucheta un apasionado por la tecnología y un Web Developer
                     </p>
-                    <p class="lead ">
+                    <p id="history" class="lead ">
                         Soy Freelance originario de la ciudad de Xalapa, Veracruz, México. Inicie en el mundo de la programación en el año <strong>2015.</strong>
                     </p>
-                    <p class="lead ">
+                    <p id="activities" class="lead ">
                         Realizo soluciones tecnológicas a pequeñas empresas y emprendedores que desean unirse al mundo digital, convirtiendo su visión en un gran producto o servicio.
                     </p>
                 </div>
                 <div class="col-sm-8 ">
-                    <h3>Habilidades</h3>
+                    <h3 id="skills-title">Habilidades</h3>
                     <div class="container ">
                         <div class="row ">
                             <div data-aos="flip-left" class="col-sm box text-center text-white d-flex flex-column text-center ">
@@ -182,10 +189,10 @@
                 </div>
             </div>
         </section>
-        <section id="lasts_proyects" class="container mt-1">
+        <section id="latest_proyects" class="container mt-1">
             <div data-aos="fade-up" class="row ">
                 <div class="col-sm-12 bg-blue-y p-2 text-white text-center ">
-                    <h2>Últimos proyectos</h2>
+                    <h2 id="lastes-proyects-title">Últimos proyectos</h2>
                 </div>
             </div>
             <div class="row  p-3">
@@ -198,31 +205,31 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Teleimagenologia</h5>
-                                    <p class="card-text">Red social médica.</p>
+                                    <p id="description-teleimm" class="card-text">Red social médica.</p>
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-sm m-1 container-img-preview">
                                                 <img src="img/teleimm_1.webp" class="img-fluid" alt="teleimm 1">
                                                 <div class="overlay">
-                                                    <div class="text-img"><a onClick="openModal('teleimm_1.webp')">Ver</a></div>
+                                                    <div class="text-img"><a class="show-img" onClick="openModal ('teleimm_1.webp')">Ver</a></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm m-1 container-img-preview">
                                                 <img src="img/teleimm_3.webp" class="img-fluid" alt="teleimm 3">
                                                 <div class="overlay">
-                                                    <div class="text-img"><a onClick="openModal('teleimm_3.webp')">Ver</a></div>
+                                                    <div class="text-img"><a class="show-img" onClick="openModal('teleimm_3.webp')">Ver</a></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm m-1 container-img-preview">
                                                 <img src="img/teleimm_2.webp" class="img-fluid" alt="teleimm 2">
                                                 <div class="overlay">
-                                                    <div class="text-img"><a onClick="openModal('teleimm_2.webp')">Ver</a></div>
+                                                    <div class="text-img"><a class="show-img" onClick="openModal('teleimm_2.webp')">Ver</a></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="m-2 d-flex justify-content-center">
-                                        <a href="https://www.teleimm.com" target="_blank" class="btn btn-primary">Ir al sitio</a>
+                                        <a href="https://www.teleimm.com" target="_blank" class="btn btn-primary go-site">Ir al sitio</a>
                                     </div>
                                 </div>
                             </div>
@@ -238,25 +245,25 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Sistema de clientes</h5>
-                                    <p class="card-text">Sistema manejador de cartera de clientes para contadores públicos</p>
+                                    <p id="description-sc" class="card-text">Sistema manejador de cartera de clientes para contadores públicos</p>
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-sm m-1 container-img-preview">
                                                 <img src="img/sc_1.webp" class="img-fluid" alt="sistema clientes 1">
                                                 <div class="overlay">
-                                                    <div class="text-img"><a onClick="openModal('sc_1.webp')">Ver</a></div>
+                                                    <div class="text-img"><a class="show-img" onClick="openModal('sc_1.webp')">Ver</a></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm m-1 container-img-preview">
                                                 <img src="img/sc_2.webp" class="img-fluid" alt="sistema clients 2">
                                                 <div class="overlay">
-                                                    <div class="text-img"><a onClick="openModal('sc_2.webp')">Ver</a></div>
+                                                    <div class="text-img"><a class="show-img" onClick="openModal('sc_2.webp')">Ver</a></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="m-2 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary" disabled>Próximamente</button>
+                                        <button type="button" class="btn btn-primary coming" disabled>Próximamente</button>
                                     </div>
                                 </div>
                             </div>
@@ -268,7 +275,7 @@
         <section data-aos="flip-up" id="contact" class="container mt-1">
             <div class="row">
                 <div class="col-sm-12 bg-blue-y p-2 text-white text-center ">
-                    <h2>Contactame</h2>
+                    <h2 id="contac-title">Contactame</h2>
                 </div>
             </div>
             <div class="row">
@@ -296,9 +303,9 @@
                         <div class="container-icon">
                             <div class="icon-social text-center">
 
-                                <a href="YaelRuiz_CV.pdf" download><i class="fas fa-download fa-2x icon-social cv"></i></a>
+                                <a id="donwload-cv" href="YaelRuiz_CV.pdf" download><i class="fas fa-download fa-2x icon-social cv"></i></a>
                             </div>
-                            <span class="title-icon animate__animated animate__fadeIn">Descargar CV</span>
+                            <span id="text-cv" class="title-icon animate__animated animate__fadeIn">Descargar CV</span>
                         </div>
                     </div>
                 </div>
