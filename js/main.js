@@ -123,7 +123,7 @@ function languageES() {
     navHome.innerHTML = '<i class="fas fa-home m-1"></i> Inicio';
     navAbout.innerHTML = '<i class="fas fa-user m-1"></i> Sobre mi';
     latestProyect.innerHTML = '<i class="fas fa-box-open m-1"></i> Últimos Proyectos';
-    navContact.innerHTML = '<i class="fas fa-id-card m-1"></i> Contactame';
+    navContact.innerHTML = '<i class="fas fa-id-card m-1"></i> Contáctame';
     greetings.innerHTML = "Hola !";
     name.innerHTML = "Soy Yael Ruiz Pucheta";
     specialty.innerHTML = "Desarrollador Web";
@@ -140,7 +140,7 @@ function languageES() {
     cvHref.href = 'YaelRuiz_CV_ES.pdf';
     cvText.innerHTML = "Descargar CV";
 
-    contactTitle.innerHTML = "Contactame";
+    contactTitle.innerHTML = "Contáctame";
     for (let item of shows) {
         item.innerHTML = "Ver";
     }
