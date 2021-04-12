@@ -140,7 +140,7 @@ function languageES() {
     cvHref.href = 'YaelRuiz_CV_ES.pdf';
     cvText.innerHTML = "Descargar CV";
 
-    contactTitle.innerHTML = "Contact me";
+    contactTitle.innerHTML = "Contactame";
     for (let item of shows) {
         item.innerHTML = "Ver";
     }
