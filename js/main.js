@@ -50,9 +50,12 @@ function languageEN() {
     const navAbout = document.getElementById('nav_about');
     const navContact = document.getElementById('nav_contact');
     const latestProyect = document.getElementById('nav_latest_proyects');
+    const navCertification = document.getElementById('nav_certifications');
+    const certificationsTitle = document.getElementById('certification-title');
 
     navHome.innerHTML = '<i class="fas fa-home m-1"></i> Home';
     navAbout.innerHTML = '<i class="fas fa-user m-1"></i> About Me';
+    navCertification.innerHTML = '<i class="fas fa-certificate m-1"></i> Certifications';
     latestProyect.innerHTML = '<i class="fas fa-box-open m-1"></i> Latest Projects';
     navContact.innerHTML = '<i class="fas fa-id-card m-1"></i> Contact me';
     greetings.innerHTML = "Hi !";
@@ -70,6 +73,7 @@ function languageEN() {
     descriptionSc.innerHTML = "Manager System  of customer for accountant public";
     cvHref.href = 'YaelRuiz_CV_EN.pdf';
     cvText.innerHTML = "Download CV";
+    certificationsTitle.innerHTML = 'Certifications';
 
     contactTitle.innerHTML = "Contact me";
     for (let item of shows) {
@@ -119,9 +123,12 @@ function languageES() {
     const navAbout = document.getElementById('nav_about');
     const navContact = document.getElementById('nav_contact');
     const latestProyect = document.getElementById('nav_latest_proyects');
+    const navCertification = document.getElementById('nav_certifications');
+    const certificationsTitle = document.getElementById('certification-title');
 
     navHome.innerHTML = '<i class="fas fa-home m-1"></i> Inicio';
     navAbout.innerHTML = '<i class="fas fa-user m-1"></i> Sobre mi';
+    navCertification.innerHTML = '<i class="fas fa-certificate m-1"></i> Certificaciones';
     latestProyect.innerHTML = '<i class="fas fa-box-open m-1"></i> Últimos Proyectos';
     navContact.innerHTML = '<i class="fas fa-id-card m-1"></i> Contáctame';
     greetings.innerHTML = "Hola !";
@@ -139,6 +146,7 @@ function languageES() {
     descriptionSc.innerHTML = "Sistema manejador de cartera de clientes para contadores públicos";
     cvHref.href = 'YaelRuiz_CV_ES.pdf';
     cvText.innerHTML = "Descargar CV";
+    certificationsTitle.innerHTML = 'Certificaciones';
 
     contactTitle.innerHTML = "Contáctame";
     for (let item of shows) {
@@ -164,7 +172,6 @@ function closeNav() {
 function darkMode(value) {
     if (value) {
         document.body.classList.add("dark-mode");
-        this.darkMode = true;
     } else {
         document.body.classList.remove("dark-mode");
     }
