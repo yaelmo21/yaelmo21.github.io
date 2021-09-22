@@ -1,5 +1,8 @@
 AOS.init();
 
+const myOffcanvas = document.getElementById('offcanvasNavbar');
+const bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 const tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -35,7 +38,6 @@ function languageEN() {
     const history = document.getElementById('history');
     const activities = document.getElementById('activities');
     const skillTitle = document.getElementById('skills-title');
-    const moreSkillsbtn = document.getElementById('moreSkillsbtn');
     const lastesProyectsTitle = document.getElementById('lastes-proyects-title');
     const descriptionTeleimagenologia = document.getElementById('description-teleimm');
     const shows = document.getElementsByClassName('show-img');
@@ -52,12 +54,14 @@ function languageEN() {
     const latestProyect = document.getElementById('nav_latest_proyects');
     const navCertification = document.getElementById('nav_certifications');
     const certificationsTitle = document.getElementById('certification-title');
+    const navSkills = document.getElementById('nav_skills');
 
-    navHome.innerHTML = '<i class="fas fa-home m-1"></i> Home';
-    navAbout.innerHTML = '<i class="fas fa-user m-1"></i> About Me';
-    navCertification.innerHTML = '<i class="fas fa-certificate m-1"></i> Certifications';
-    latestProyect.innerHTML = '<i class="fas fa-box-open m-1"></i> Latest Projects';
-    navContact.innerHTML = '<i class="fas fa-id-card m-1"></i> Contact me';
+    navHome.innerHTML = '<i class="fas fa-home"></i> Home';
+    navAbout.innerHTML = '<i class="fas fa-user"></i> About Me';
+    navSkills.innerHTML = '<i class="fas fa-box-open"></i> Skills';
+    navCertification.innerHTML = '<i class="fas fa-award"></i> Certifications';
+    latestProyect.innerHTML = '<i class="fas fa-clipboard-list"></i> Latest Projects';
+    navContact.innerHTML = '<i class="fas fa-mail-bulk"></i> Contact me';
     greetings.innerHTML = "Hi !";
     name.innerHTML = "I am Yael Ruiz Pucheta";
     specialty.innerHTML = "Web Developer";
@@ -67,7 +71,6 @@ function languageEN() {
     history.innerHTML = 'I Work as a freelance in Xalapa Veracruz,Mexico. I began programming in <strong>2015.</strong>';
     activities.innerHTML = 'I create customised solutions for small business and entrepreneurs that whant to join to digital world, to bring their products and services to innovation era.';
     skillTitle.innerHTML = 'Skills';
-    moreSkillsbtn.innerHTML = 'Show more';
     lastesProyectsTitle.innerHTML = 'Latest Projects';
     descriptionTeleimagenologia.innerHTML = 'A social network medical';
     descriptionSc.innerHTML = "Manager System  of customer for accountant public";
@@ -108,7 +111,6 @@ function languageES() {
     const history = document.getElementById('history');
     const activities = document.getElementById('activities');
     const skillTitle = document.getElementById('skills-title');
-    const moreSkillsbtn = document.getElementById('moreSkillsbtn');
     const lastesProyectsTitle = document.getElementById('lastes-proyects-title');
     const descriptionTeleimagenologia = document.getElementById('description-teleimm');
     const shows = document.getElementsByClassName('show-img');
@@ -124,13 +126,16 @@ function languageES() {
     const navContact = document.getElementById('nav_contact');
     const latestProyect = document.getElementById('nav_latest_proyects');
     const navCertification = document.getElementById('nav_certifications');
+    const navSkills = document.getElementById('nav_skills');
     const certificationsTitle = document.getElementById('certification-title');
 
-    navHome.innerHTML = '<i class="fas fa-home m-1"></i> Inicio';
-    navAbout.innerHTML = '<i class="fas fa-user m-1"></i> Sobre mi';
-    navCertification.innerHTML = '<i class="fas fa-certificate m-1"></i> Certificaciones';
-    latestProyect.innerHTML = '<i class="fas fa-box-open m-1"></i> Últimos Proyectos';
-    navContact.innerHTML = '<i class="fas fa-id-card m-1"></i> Contáctame';
+
+    navHome.innerHTML = '<i class="fas fa-home"></i> Inicio';
+    navAbout.innerHTML = '<i class="fas fa-user"></i> Sobre mi';
+    navSkills.innerHTML = '<i class="fas fa-box-open"></i> Habilidades';
+    navCertification.innerHTML = '<i class="fas fa-award"></i> Certificaciones';
+    latestProyect.innerHTML = '<i class="fas fa-clipboard-list"></i> Últimos Proyectos';
+    navContact.innerHTML = '<i class="fas fa-mail-bulk"></i> Contáctame';
     greetings.innerHTML = "Hola !";
     name.innerHTML = "Soy Yael Ruiz Pucheta";
     specialty.innerHTML = "Desarrollador Web";
@@ -140,7 +145,6 @@ function languageES() {
     history.innerHTML = 'Trabajo como Freelance en la ciudad de Xalapa, Veracruz, México. Inicie en el mundo de la programación en el año <strong>2015.</strong>';
     activities.innerHTML = 'Realizo soluciones tecnológicas a pequeñas empresas y emprendedores que desean unirse al mundo digital, convirtiendo su visión en un gran producto o servicio.';
     skillTitle.innerHTML = 'Habilidades';
-    moreSkillsbtn.innerHTML = 'Mostrar más';
     lastesProyectsTitle.innerHTML = 'Últimos proyectos';
     descriptionTeleimagenologia.innerHTML = 'Red social médica.';
     descriptionSc.innerHTML = "Sistema manejador de cartera de clientes para contadores públicos";
@@ -164,10 +168,13 @@ function languageES() {
 
 
 function closeNav() {
-    const menuToggle = document.getElementById('navbarNavAltMarkup');
-    const bsCollapse = new bootstrap.Collapse(menuToggle);
-    bsCollapse.toggle()
+    setTimeout(() => {
+        bsOffcanvas.hide();
+    }, 400);
+
 }
+
+
 
 function darkMode(value) {
     if (value) {
@@ -185,54 +192,3 @@ function openModal(file) {
     const myModal = new bootstrap.Modal(document.getElementById('modalView'), {});
     myModal.show();
 }
-
-
-window.addEventListener('DOMContentLoaded', () => {
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-            if (entry.intersectionRatio > 0) {
-                const element = document.getElementById(`nav_${id}`);
-                element.classList.add('active');
-            } else {
-                const element = document.getElementById(`nav_${id}`);
-                element.classList.remove('active');
-            }
-        });
-    });
-
-    document.querySelectorAll('section[id]').forEach((section) => {
-        observer.observe(section);
-    });
-
-});
-
-window.addEventListener('load', function() {
-    const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (darkMode) {
-        document.body.classList.add("dark-mode");
-        document.getElementById("dark_mode").checked = true;
-    } else {
-        document.body.classList.remove("dark-mode");
-    }
-});
-
-
-let myCollapsible = document.getElementById('moreSkills');
-myCollapsible.addEventListener('shown.bs.collapse', function() {
-    let collapseButton = document.getElementById('moreSkillsbtn');
-    if (selectLanguage == 'es') {
-        collapseButton.textContent = "Ocultar";
-    } else if (selectLanguage == 'en') {
-        collapseButton.textContent = "Hide";
-    }
-});
-myCollapsible.addEventListener('hide.bs.collapse', function() {
-    let collapseButton = document.getElementById('moreSkillsbtn');
-    if (selectLanguage == 'es') {
-        collapseButton.textContent = "Mostrar más";
-    } else if (selectLanguage == 'en') {
-        collapseButton.textContent = "Show more";
-    }
-});

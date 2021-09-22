@@ -27,11 +27,21 @@ body {
 }
 
 .bg-blue-y {
-    background-color: #08245f;
+    background-color: #00408D;
 }
 
 .text-blue-y {
-    color: #08245f;
+    color: #00408D;
+}
+
+.bg-secondary-y {
+    background-color: #1F2937;
+}
+
+.background-img {
+    background-image: url('../img/fondo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container-img-preview {
@@ -126,4 +136,35 @@ body {
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.photo-round {
+    border-radius: 20%;
+}
+
+.icon-size {
+    width: 5em;
+    fill: white;
+}
+
+.width-skill {
+    width: 30%;
+}
+
+@media (max-width: 575.98px) {
+    .width-skill {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .width-skill {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .width-skill {
+        width: 50%;
+    }
 }
