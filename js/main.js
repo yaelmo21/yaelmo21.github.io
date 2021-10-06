@@ -141,7 +141,7 @@ function languageES() {
     specialty.innerHTML = "Desarrollador Web";
     aboutTitle.innerHTML = "Sobre mi";
     whoAm.innerHTML = '¿Quien soy?';
-    description.innerHTML = 'Soy Yael Ruiz Pucheta un desarrolador web y un apasionado por la tecnología.';
+    description.innerHTML = 'Soy Yael Ruiz Pucheta un apasionado por la tecnología y un Web Developer.';
     history.innerHTML = 'Trabajo como Freelance en la ciudad de Xalapa, Veracruz, México. Inicie en el mundo de la programación en el año <strong>2015.</strong>';
     activities.innerHTML = 'Realizo soluciones tecnológicas a pequeñas empresas y emprendedores que desean unirse al mundo digital, convirtiendo su visión en un gran producto o servicio.';
     skillTitle.innerHTML = 'Habilidades';
