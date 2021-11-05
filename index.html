@@ -18,8 +18,11 @@
 
         gtag('config', 'G-MHXVEV4G5W');
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/main.css">
@@ -32,51 +35,68 @@
             <a class="navbar-brand" href="#home">
                 <img src="img/logo.svg" alt="" width="40" height="40">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="bg-secondary-y offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="bg-secondary-y offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <div class="dropdown pr-3">
-                        <button class="button-icon text-white dropdown-toggle" type="button" id="language" data-bs-toggle="dropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false"><i class="fas fa-globe"></i></button>
+                        <button class="button-icon text-white dropdown-toggle" type="button" id="language"
+                            data-bs-toggle="dropdown" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                            aria-expanded="false"><i class="fas fa-globe"></i></button>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="language">
                             <li>
-                                <a class="dropdown-item" type="button" id="es" onclick="languageES()" aria-current="true">Español</a>
+                                <a class="dropdown-item" type="button" id="es" onclick="languageES()"
+                                    aria-current="true">Español</a>
                             </li>
-                            <li><button class="dropdown-item" type="button" id="en" onclick="languageEN()">English</button></li>
+                            <li><button class="dropdown-item" type="button" id="en"
+                                    onclick="languageEN()">English</button></li>
                         </ul>
                     </div>
-                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body d-flex justify-content-center align-items-center ">
                     <ul class="navbar-nav justify-content-lg-center flex-grow-1 pe-2">
                         <li class="nav-item ms-3 ">
-                            <a class="nav-link " id="nav_home" href="#home" onclick="closeNav()"> <i class="fas fa-home"></i> Inicio</a>
+                            <a class="nav-link " id="nav_home" href="#home" onclick="closeNav()"> <i
+                                    class="fas fa-home"></i> Inicio</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" id="nav_about" href="#about" onclick="closeNav()"><i class="fas fa-user"></i> Sobre Mi</a>
+                            <a class="nav-link" id="nav_about" href="#about" onclick="closeNav()"><i
+                                    class="fas fa-user"></i> Sobre Mi</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link " id="nav_skills" href="#skills" onclick="closeNav()"><i class="fas fa-box-open"></i> Habilidades</a>
+                            <a class="nav-link " id="nav_skills" href="#skills" onclick="closeNav()"><i
+                                    class="fas fa-box-open"></i> Habilidades</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link " id="nav_certifications" href="#certifications" onclick="closeNav()"><i class="fas fa-award"></i> Certificaciones</a>
+                            <a class="nav-link " id="nav_certifications" href="#certifications" onclick="closeNav()"><i
+                                    class="fas fa-award"></i> Certificaciones</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link " id="nav_latest_proyects" href="#latest_proyects" onclick="closeNav()"><i class="fas fa-clipboard-list"></i> Últimos Proyectos</a>
+                            <a class="nav-link " id="nav_latest_proyects" href="#latest_proyects"
+                                onclick="closeNav()"><i class="fas fa-clipboard-list"></i> Últimos Proyectos</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link " id="nav_contact" href="#contact" onclick="closeNav()"><i class="fas fa-mail-bulk"></i> Contactame</a>
+                            <a class="nav-link " id="nav_contact" href="#contact" onclick="closeNav()"><i
+                                    class="fas fa-mail-bulk"></i> Contactame</a>
                         </li>
                     </ul>
 
                     <div class="dropstart d-none d-lg-block ">
-                        <button class="button-icon text-white dropdown-toggle" type="button" id="language" data-bs-toggle="dropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false"><i class="fas fa-globe"></i></button>
+                        <button class="button-icon text-white dropdown-toggle" type="button" id="language"
+                            data-bs-toggle="dropdown" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                            aria-expanded="false"><i class="fas fa-globe"></i></button>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="language">
                             <li>
-                                <a class="dropdown-item" type="button" id="es" onclick="languageES()" aria-current="true">Español</a>
+                                <a class="dropdown-item" type="button" id="es" onclick="languageES()"
+                                    aria-current="true">Español</a>
                             </li>
-                            <li><button class="dropdown-item" type="button" id="en" onclick="languageEN()">English</button></li>
+                            <li><button class="dropdown-item" type="button" id="en"
+                                    onclick="languageEN()">English</button></li>
                         </ul>
                     </div>
 
@@ -87,16 +107,20 @@
 
     <div class="background-img bg-secondary-y">
         <section id="home" class=" animate__animated animate__fadeIn animate__slow">
-            <div data-aos="fade-down" style="height: 90vh;" class="flex-fill bd-highlight d-flex flex-column flex-md-row justify-content-center align-items-center">
-                <div data-aos="fade-down" style="height: 100vh;" class="flex-fill bd-highlight d-flex flex-column flex-md-row justify-content-around  align-items-center">
+            <div data-aos="fade-down" style="height: 90vh;"
+                class="flex-fill bd-highlight d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <div data-aos="fade-down" style="height: 100vh;"
+                    class="flex-fill bd-highlight d-flex flex-column flex-md-row justify-content-around  align-items-center">
                     <div class="m-3">
-                        <img src="img/yael.webp" class="img-fluid img-thumbnail photo-round" style="max-width: 300px;" alt="yael ruiz">
+                        <img src="img/yael.webp" class="img-fluid img-thumbnail photo-round" style="max-width: 300px;"
+                            alt="yael ruiz">
                     </div>
                     <div class="d-flex flex-column text-center text-white ">
                         <h4 id="greetings">Hola !</h4>
                         <h1 id="name">Soy Yael Ruiz Pucheta</h1>
 
-                        <h3><i class="fas fa-terminal m-1 text-danger"></i><span id="specialty">Desarrollador Web</span></h3>
+                        <h3><i class="fas fa-terminal m-1 text-danger"></i><span id="specialty">Desarrollador Web</span>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -112,7 +136,8 @@
 
                 <div data-aos="fade-right" class="d-flex align-items-center flex-column flex-md-row">
                     <div class="flex-shrink-0">
-                        <img src="img/remember.jpeg" class="img-fluid photo-round" style="max-width: 300px;" alt="foto concurso ">
+                        <img src="img/remember.jpeg" class="img-fluid photo-round" style="max-width: 300px;"
+                            alt="foto concurso ">
                     </div>
                     <div class="flex-grow-1 ms-3 text-white">
                         <h3 id="who-am">¿Quien soy?</h3>
@@ -120,10 +145,12 @@
                             Soy Yael Ruiz Pucheta un apasionado por la tecnología y un Web Developer
                         </p>
                         <p id="history" class="lead ">
-                            Soy Freelance originario de la ciudad de Xalapa, Veracruz, México. Inicie en el mundo de la programación en el año <strong>2015.</strong>
+                            Soy Freelance originario de la ciudad de Xalapa, Veracruz, México. Inicie en el mundo de la
+                            programación en el año <strong>2015.</strong>
                         </p>
                         <p id="activities" class="lead ">
-                            Realizo soluciones tecnológicas a pequeñas empresas y emprendedores que desean unirse al mundo digital, convirtiendo su visión en un gran producto o servicio.
+                            Realizo soluciones tecnológicas a pequeñas empresas y emprendedores que desean unirse al
+                            mundo digital, convirtiendo su visión en un gran producto o servicio.
                         </p>
                     </div>
                 </div>
@@ -165,7 +192,8 @@
                     <i class="fab fa-angular fa-5x "></i>
                     <span>Angular</span>
                 </div>
-                <div data-aos="flip-up" class="width-skill box text-center text-white d-flex align-items-center flex-column text-center ">
+                <div data-aos="flip-up"
+                    class="width-skill box text-center text-white d-flex align-items-center flex-column text-center ">
                     <img class="icon-size" src="/img/ionic.svg" alt="">
                     <span>Ionic</span>
                 </div>
@@ -189,7 +217,8 @@
                     <i class="fab fa-swift fa-5x"></i>
                     <span>Swift</span>
                 </div>
-                <div data-aos="flip-up" class="width-skill box text-center text-white d-flex align-items-center flex-column text-center ">
+                <div data-aos="flip-up"
+                    class="width-skill box text-center text-white d-flex align-items-center flex-column text-center ">
                     <img class="icon-size" src="/img/flutter.svg" alt="">
                     <span>Flutter</span>
                 </div>
@@ -205,11 +234,13 @@
                     <i class="fab fa-python fa-5x"></i>
                     <span>Python</span>
                 </div>
-                <div data-aos="flip-up" class="width-skill box text-center text-white d-flex align-items-center flex-column text-center ">
+                <div data-aos="flip-up"
+                    class="width-skill box text-center text-white d-flex align-items-center flex-column text-center ">
                     <img class="icon-size" src="/img/mongo.svg" alt="">
                     <span>Mongo DB</span>
                 </div>
-                <div data-aos="flip-up" class="width-skill box text-center text-white d-flex align-items-center flex-column text-center ">
+                <div data-aos="flip-up"
+                    class="width-skill box text-center text-white d-flex align-items-center flex-column text-center ">
                     <img class="icon-size" src="/img/mysql.svg" alt="">
                     <span>Mysql</span>
                 </div>
@@ -231,15 +262,18 @@
             </div>
 
 
-            <div class="w-100 d-flex justify-content-center">
-                <div data-aos="flip-left" class="d-flex align-items-center p-5 text-white">
-                    <div class="flex-shrink-0">
-                        <img class="img-fluid" src="./img/microsoft_logo_icon_147261.svg" alt="logo microsoft">
-                    </div>
-                    <div class="flex-grow-1 ms-3">
-                        Microsoft Azure Fundamentals AZ-900
+
+            <div class="cards p-2">
+                <div class="swiper mySwiperCard">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <img class="img-fluid" src="./img/microsoft_logo_icon_147261.svg" alt="logo microsoft">
+                            <span>Microsoft Azure Fundamentals AZ-900</span>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
                     </div>
                 </div>
+
             </div>
         </section>
         <section id="latest_proyects" class="container mt-1">
@@ -264,25 +298,40 @@
                                             <div class="col-sm m-1 container-img-preview">
                                                 <img src="img/teleimm_1.webp" class="img-fluid" alt="teleimm 1">
                                                 <div class="overlay">
-                                                    <div class="text-img"><a class="show-img" onClick="openModal ('teleimm_1.webp')">Ver</a></div>
+                                                    <div class="text-img"><a class="show-img"
+                                                            onClick="openModalTeleimm(0)">Ver</a></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm m-1 container-img-preview">
                                                 <img src="img/teleimm_3.webp" class="img-fluid" alt="teleimm 3">
                                                 <div class="overlay">
-                                                    <div class="text-img"><a class="show-img" onClick="openModal('teleimm_3.webp')">Ver</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm m-1 container-img-preview">
-                                                <img src="img/teleimm_2.webp" class="img-fluid" alt="teleimm 2">
-                                                <div class="overlay">
-                                                    <div class="text-img"><a class="show-img" onClick="openModal('teleimm_2.webp')">Ver</a></div>
+                                                    <div class="text-img"><a class="show-img"
+                                                            onClick="openModalTeleimm(1)">Ver</a></div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-sm m-1 container-img-preview">
+                                                <img src="img/teleimm_2.webp" class="img-fluid" alt="teleimm 2">
+                                                <div class="overlay">
+                                                    <div class="text-img"><a class="show-img"
+                                                            onClick="openModalTeleimm(2)">Ver</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm m-1 container-img-preview">
+                                                <img src="img/teleimm_4.webp" class="img-fluid" alt="teleimm 2">
+                                                <div class="overlay">
+                                                    <div class="text-img"><a class="show-img"
+                                                            onClick="openModalTeleimm(3)">Ver</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                     <div class="m-2 d-flex justify-content-center">
-                                        <a href="https://www.teleimm.com" target="_blank" class="btn btn-primary go-site">Ir al sitio</a>
+                                        <a href="https://www.teleimm.com" target="_blank"
+                                            class="btn btn-primary go-site">Ir al sitio</a>
                                     </div>
                                 </div>
                             </div>
@@ -298,25 +347,36 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Sistema de clientes</h5>
-                                    <p id="description-sc" class="card-text">Sistema manejador de cartera de clientes para contadores públicos</p>
+                                    <p id="description-sc" class="card-text">Sistema manejador de cartera de clientes
+                                        para contadores públicos</p>
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-sm m-1 container-img-preview">
                                                 <img src="img/sc_1.webp" class="img-fluid" alt="sistema clientes 1">
                                                 <div class="overlay">
-                                                    <div class="text-img"><a class="show-img" onClick="openModal('sc_1.webp')">Ver</a></div>
+                                                    <div class="text-img"><a class="show-img"
+                                                            onClick="openModalClients(0)">Ver</a></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm m-1 container-img-preview">
                                                 <img src="img/sc_2.webp" class="img-fluid" alt="sistema clients 2">
                                                 <div class="overlay">
-                                                    <div class="text-img"><a class="show-img" onClick="openModal('sc_2.webp')">Ver</a></div>
+                                                    <div class="text-img"><a class="show-img"
+                                                            onClick="openModalClients(1)">Ver</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm m-1 container-img-preview">
+                                                <img src="img/sc_3.webp" class="img-fluid" alt="sistema clients 2">
+                                                <div class="overlay">
+                                                    <div class="text-img"><a class="show-img"
+                                                            onClick="openModalClients(2)">Ver</a></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="m-2 d-flex justify-content-center">
-                                        <button type="button" class="btn btn-primary coming" disabled>Próximamente</button>
+                                        <button type="button" class="btn btn-primary coming"
+                                            disabled>Próximamente</button>
                                     </div>
                                 </div>
                             </div>
@@ -336,27 +396,31 @@
                     <div class="d-flex justify-contnet-center">
                         <div class="container-icon ">
                             <div class="icon-social text-center">
-                                <a href="https://linkedin.com/in/yael-ruiz-pucheta-8b6132184" target="_blank"><i class=" fab fa-linkedin-in fa-2x icon-social linkedin"></i></a>
+                                <a href="https://linkedin.com/in/yael-ruiz-pucheta-8b6132184" target="_blank"><i
+                                        class=" fab fa-linkedin-in fa-2x icon-social linkedin"></i></a>
                             </div>
                             <span class="title-icon animate__animated animate__fadeIn">LinkedIn</span>
                         </div>
                         <div class="container-icon">
                             <div class="icon-social text-center">
-                                <a href="https://github.com/yaelmo21" target="_blank"><i class=" fab fa-github fa-2x icon-social github"></i></a>
+                                <a href="https://github.com/yaelmo21" target="_blank"><i
+                                        class=" fab fa-github fa-2x icon-social github"></i></a>
                             </div>
                             <span class="title-icon animate__animated animate__fadeIn">Github</span>
                         </div>
 
                         <div class="container-icon">
                             <div class="icon-social text-center">
-                                <a href="https://t.me/Yaelmo" target="_blank"><i class=" fab fa-telegram-plane fa-2x icon-social telegram"></i></a>
+                                <a href="https://t.me/Yaelmo" target="_blank"><i
+                                        class=" fab fa-telegram-plane fa-2x icon-social telegram"></i></a>
                             </div>
                             <span class="title-icon animate__animated animate__fadeIn">Telegram</span>
                         </div>
                         <div class="container-icon">
                             <div class="icon-social text-center">
 
-                                <a id="donwload-cv" href="YaelRuiz_CV.pdf" download><i class="fas fa-download fa-2x icon-social cv"></i></a>
+                                <a id="donwload-cv" href="YaelRuiz_CV.pdf" download><i
+                                        class="fas fa-download fa-2x icon-social cv"></i></a>
                             </div>
                             <span id="text-cv" class="title-icon animate__animated animate__fadeIn">Descargar CV</span>
                         </div>
@@ -366,7 +430,10 @@
         </section>
     </div>
 
-    <div id="modalView" class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+
+    <div id="modalView" class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
@@ -379,8 +446,95 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <div id="modalViewTeleimm" class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-color: black;">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper w-100 h-100 ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/teleimm_1.webp" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/teleimm_3.webp" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/teleimm_2.webp" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/teleimm_4.webp" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="modalViewClients" class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="background-color: black;">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiperClients w-100 h-100 ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/sc_1.webp" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/sc_2.webp" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <img src="img/sc_3.webp" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
     <script src="js/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js "></script>
 </body>
 
