@@ -1,3 +1,8 @@
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('/sw.js');
+}
+
+
 AOS.init();
 
 const swiper = new Swiper(".mySwiper", {
