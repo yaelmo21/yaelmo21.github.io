@@ -8,7 +8,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack --config webpack.prod.js",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "gh-pages -d dist",
         "build:dev": "webpack --config webpack.config.js",
         "start": "webpack server --config webpack.config.js --open --port=8080"
     },
