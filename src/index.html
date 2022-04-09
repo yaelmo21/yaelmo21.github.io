@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Yael Ruiz </title>
 </head>
 
 <body>
-    <nav style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: ~ .uk-height-large" class="uk-navbar-container uk-margin bg-secondary" uk-navbar>
-        <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo text-white" href="#home"><img class="img-logo" src="./assets/Logo-fondo-Y.jpg" alt="logo "></a>
-        </div>
-        <div class="uk-navbar-right">
-            <a class="uk-navbar-toggle" uk-toggle="target: #menu;">
-                <span uk-navbar-toggle-icon></span>
+    <nav style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: ~ .uk-height-large" class="uk-navbar-container uk-navbar uk-margin bg-secondary" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="#">
+                <img width="50" height="50" src="./assets/Logo-fondo-Y.jpg" alt="logo">
             </a>
         </div>
+        <div class="uk-navbar-right">
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #menu"></a>
+
+        </div>
+
     </nav>
     <aside id="menu" uk-offcanvas=" mode: push; overlay: true;flip: true">
         <div class="uk-offcanvas-bar uk-flex uk-flex-column bg-primary">
