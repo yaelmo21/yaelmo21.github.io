@@ -24,6 +24,7 @@ import azure from '../assets/devicons/azure-original.svg';
 import jest from '../assets/devicons/jest-plain.svg';
 import aws from '../assets/devicons/aws.svg';
 import pwa from '../assets/devicons/pwa.svg';
+import salesforce from '../assets/devicons/salesforce-original.svg';
 
 const skills = [{
         name: 'JavaScript',
@@ -81,10 +82,7 @@ const skills = [{
         name: 'Webpack',
         img: webpack
     },
-    {
-        name: 'Flutter',
-        img: flutter
-    },
+
     {
         name: 'socket.io',
         img: socketio
@@ -124,6 +122,10 @@ const skills = [{
     {
         name: 'gitlab',
         img: gitlab
+    },
+    {
+        name: 'salesforce',
+        img: salesforce
     },
     {
         name: 'azure',
