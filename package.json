@@ -21,7 +21,6 @@
     "bugs": {
         "url": "https://github.com/yaelmo21/yaelmo21.github.io/issues"
     },
-    "homepage": "https://github.com/yaelmo21/yaelmo21.github.io#readme",
     "devDependencies": {
         "@babel/core": "^7.17.9",
         "@babel/preset-env": "^7.16.11",
