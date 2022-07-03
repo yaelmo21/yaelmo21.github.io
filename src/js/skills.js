@@ -10,8 +10,8 @@ const createSkillsList = () => {
 }
 
 const cardSkill = (name, img) => (`
-    <div>
-        <div class="uk-card uk-card-default uk-card-body bg-primary-border uk-box-shadow-large uk-padding rounded ">
+    <div class="container-zoom">
+        <div class="uk-card uk-card-default uk-card-body bg-primary-border uk-box-shadow-large uk-padding rounded">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto">
                     <img  width="70" height="70" src="${img}" >

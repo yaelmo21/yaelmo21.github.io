@@ -3,3 +3,11 @@
 @import "uikit/src/scss/mixins-theme.scss";
 @import "uikit/src/scss/uikit-theme.scss";
 @import "./styles/base/settings";
+@media (min-width: 992px) {
+    .container-zoom {
+        transition: transform .2s;
+        *:hover {
+            transform: scale(1.05);
+        }
+    }
+}
